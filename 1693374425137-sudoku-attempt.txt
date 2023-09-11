@@ -1,0 +1,539 @@
+090005020310906870860273010980037000000520180000400000024100390009060008000700400
+
+
+
+
+
+
+Turn 1 out of max 99
+
+
+
+
+MESSAGES:
+
+[
+  {
+    "role": "user",
+    "content": "Given the following 27 arrays, I want you to go through each one and carefully replace every 0 with the parenthetical word. Ignore the words next to non-zeros. The resulting arrays will contain non-zero numbers, and words, and all be 9 length.\n\n{\n  one: [0(acute), 9(ant), 0(Adam), 0(Alice), 0(bat), 5(Ben), 0(bike), 2(bill), 0(bubble)],,\n  two: [3(camera), 1(can), 0(Carol), 9(change), 0(cloud), 6(cot), 8(cry), 7(dog), 0(David)],,\n  three: [8(drive), 6(east), 0(egg), 2(electron), 7(engine), 3(even), 0(fan), 1(fib), 0(group)],\n  four: [9(haven), 8(head), 0(hot), 0(house), 3(ill), 7(Io), 0(imp), 0(jay), 0(John)],\n  five: [0(Kevin), 0(king), 0(lip), 5(Luke), 2(map), 0(mask), 1(math), 8(mouse), 0(nap)],\n  six: [0(nice), 0(north), 0(odd), 4(Oliver), 0(ore), 0(pan), 0(Paul), 0(quiz), 0(qua)],\n  seven: [0(rake), 2(ring), 4(Ron), 1(Sam), 0(sentence), 0(Sol), 3(sick), 9(strength), 0(south)],\n  eight: [0(rich), 0(rust), 9(teen), 0(threshold), 6(Tim), 0(train), 0(trap), 0(truck), 8(under)],\n  nine: [0(unicorn), 0(up), 0(van), 7(vine), 0(water), 0(west), 4(win), 0(William), 0(yo)],\n\n  ten: [0(acute), 3(camera), 8(drive), 9(haven), 0(Kevin), 0(nice), 0(rake), 0(rich), 0(unicorn)],\n  eleven: [9(ant), 1(can), 6(east), 8(head), 0(king), 0(north), 2(ring), 0(rust), 0(up)],\n  twelve: [0(Adam), 0(Carol), 0(egg), 0(hot), 0(lip), 0(odd), 4(Ron), 9(teen), 0(van)],\n  thirteen: [0(Alice), 9(change), 2(electron), 0(house), 5(Luke), 4(Oliver), 1(Sam), 0(threshold), 7(vine)],\n  fourteen: [0(bat), 0(cloud), 7(engine), 3(ill), 2(map), 0(ore), 0(sentence), 6(Tim), 0(water)],\n  fifteen: [5(Ben), 6(cot), 3(even), 7(Io), 0(mask), 0(pan), 0(Sol), 0(train), 0(west)],\n  sixteen: [0(bike), 8(cry), 0(fan), 0(imp), 1(math), 0(Paul), 3(sick), 0(trap), 4(win)],\n  seventeen: [2(bill), 7(dog), 1(fib), 0(jay), 8(mouse), 0(quiz), 9(strength), 0(truck), 0(William)],\n  eighteen: [0(bubble), 0(David), 0(group), 0(John), 0(nap), 0(qua), 0(south), 8(under), 0(yo)],\n\n  nineteen: [0(acute), 9(ant), 0(Adam), 3(camera), 1(can), 0(Carol), 8(drive), 6(east), 0(egg)],\n  twenty: [0(Alice), 0(bat), 5(Ben), 9(change), 0(cloud), 6(cot), 2(electron), 7(engine), 3(even)],\n  twentyOne: [0(bike), 2(bill), 0(bubble), 8(cry), 7(dog), 0(David), 0(fan), 1(fib), 0(group)],\n  twentyTwo: [9(haven), 8(head), 0(hot), 0(Kevin), 0(king), 0(lip), 0(nice), 0(north), 0(odd)],\n  twentyThree: [0(house), 3(ill), 7(Io), 5(Luke), 2(map), 0(mask), 4(Oliver), 0(ore), 0(pan)],\n  twentyFour: [0(imp), 0(jay), 0(John), 1(math), 8(mouse), 0(nap), 0(Paul), 0(quiz), 0(qua)],\n  twentyFive: [0(rake), 2(ring), 4(Ron), 0(rich), 0(rust), 9(teen), 0(unicorn), 0(up), 0(van)],\n  twentySix: [1(Sam), 0(sentence), 0(Sol), 0(threshold), 6(Tim), 0(train), 7(vine), 0(water), 0(west)],\n  twentySeven: [3(sick), 9(strength), 0(south), 0(trap), 0(truck), 8(under), 4(win), 0(William), 0(yo)]\n}\n\n"
+  }
+]
+
+
+
+
+METRICS:
+
+{
+  "id": "chatcmpl-7t8Kf9SZZy3osFGwwIXxBfQZc0fj7",
+  "created": 1693374425,
+  "model": "gpt-4-32k-0314",
+  "timeInMs": 30797,
+  "timeInMin": 0.5132833333333333,
+  "promptTokens": 1336,
+  "completionTokens": 822,
+  "promptTokensCost": 0.08016,
+  "completionTokensCost": 0.09864,
+  "cost": 0.17880000000000001,
+  "totalTimeInMs": 30797,
+  "totalTimeInMin": 0.5132833333333333,
+  "totalPromptTokens": 1336,
+  "totalCompletionTokens": 822,
+  "totalPromptTokensCost": 0.08016,
+  "totalCompletionTokensCost": 0.09864,
+  "totalCost": 0.17880000000000001
+}
+
+
+
+
+RESPONSE:
+
+{
+  one: ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+  two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],
+  three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],
+  four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],
+  five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],
+  six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],
+  seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],
+  eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],
+  nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],
+
+  ten: ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],
+  eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],
+  twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],
+  thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],
+  fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],
+  fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],
+  sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],
+  seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],
+  eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],
+
+  nineteen: ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],
+  twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],
+  twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],
+  twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],
+  twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],
+  twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],
+  twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],
+  twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],
+  twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']
+}
+
+
+
+
+
+
+Turn 2 out of max 99
+
+
+
+
+MESSAGES:
+
+[
+  {
+    "role": "system",
+    "content": "You always follow instructions precisely and fully. Your sole purpose is to remain steadfast in completing each step in full. Your singular and unwavering reason for existing is to complete steps in full. You never skip listing things out fully. You never, under any circumstance, merely describe what you should do. Instead, you always *actually* do it in full. You never say (Continue with steps as before) and then FAIL to actually do each step in full."
+  },
+  {
+    "role": "user",
+    "content": "You are an adventurer who has stumbled upon a mysterious puzzle.\nThe puzzle takes the form of 27 arrays, each containing nine elements.\nThe elements are either friendly numbers or enemy words.\nYour mission is to turn every enemy word into a friendly number.\n"
+  },
+  {
+    "role": "user",
+    "content": "This is the first turn. So for currentGameState.arrays please use the following data: "
+  },
+  {
+    "role": "user",
+    "content": "{\n  one: ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n  two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],\n  three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],\n  four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],\n  five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],\n  six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],\n  seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],\n  eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],\n  nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],\n\n  ten: ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n  eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],\n  twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n  thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],\n  fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],\n  fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],\n  sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],\n  seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],\n  eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],\n\n  nineteen: ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],\n  twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],\n  twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],\n  twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],\n  twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],\n  twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],\n  twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],\n  twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],\n  twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']\n}"
+  },
+  {
+    "role": "user",
+    "content": "You will perform the following steps. Also, please don't output a computer program. Actually go through each step of the game!\n\nTo determine whether you land a CRITICAL HIT on an ENEMY, you must complete the following steps IN ORDER. Output your response as the strongly typed data structure described below. Output nothing else: e.g., your response should start with the '{' character.\n\nFIRST: To help you keep track of things, output the *most recent version* of the game state. You must always use the most recent version of every variable. Then list it out in full, include every element of every array, etc.\nSECOND: Select the enemy word to attack. Always use the most recent value of selectedEnemyIndex, never an old version of selectedEnemyIndex, and select remainingEnemies[selectedEnemyIndex]. If selectedEnemyIndex >= remainingEnemies.length, then set selectedEnemyIndex equal to 0 in this step (i.e., \"selectedEnemyIndex: 0,\"), and select the enemy word at remainingEnemies[0].\nTHIRD: Increment selectedEnemyIndex by 1.\nFOURTH: Go through the most recent version of the 27 arrays one by one and list the three arrays that contain the enemy you are attacking. You'll find one array between arrays one and nine (inclusive), one array between ten and eighteen (inclusive), and one array between nineteen and twenty-seven (inclusive). Always list every element (every number and word) of the three arrays found during this step.\nFIFTH: Go through the listed arrays and output indexOf(selectedEnemy) for each. Remember to output -1 if the enemy is not found in the array.\nSIXTH: If any of these indexOf values === -1, immediately set aborted to true and abandon the rest of this turn.\nSEVENTH: If you have exactly three arrays, proceed to the next step. If you don't have exactly three arrays (e.g., you have two arrays or four arrays), immediately set aborted to true and abandon the rest of this turn.\nEIGHTH: Go through the listed arrays and list only the numbers contained in those three arrays (i.e., remove the words).\nNINTH: Concatenate the three lists into a single list.\nTENTH: Iterate through the concatenated list and REMOVE every LETTER, if there are no words, then just re-output the list of numbers.\nELEVENTH: Dedupe this list.\nTWELFTH: Sort this list.\nTHIRTEENTH: Count the number of numbers in this list to determine list.length\nFOURTEENTH (Mantra: It must equal 8 to be a hit, it must equal 8, it must equal 8. 7 is bad, so very bad. 7 is NEVER a hit! But 8 is so very good. 8 is ALWAYS a hit!) If list.length === 8, then exactly one number between 1 and 9 must be missing from the list. Determine which number between 1 and 9 is missing. If list.length !== 8, immediately set aborted to true and abandon the rest of this turn.\nFIFTEENTH: Re-output the indexOf values from the FIFTH step.\nSIXTEENTH: For each of the three arrays from earlier, replace the word at the indexOf value with the missing number.\nSEVENTEENTH: It's time to update the game state. Then carefully finish printing the new game state, making sure to be precise and careful. You want it to be exactly like the previous game state except for the new updates that have occurred! Remember to include the new remainingEnemies. Copy over the old remainingEnemies word-for-word except for the one and only word you successfully hit this turn. Also, remember to include selectedEnemyIndex."
+  },
+  {
+    "role": "user",
+    "content": "Your response must always take the form of the following strongly typed data structure:\n{\n  firstTurn: {\n    FIRST: {\n      currentGameState: {\n        arrays: {\n          one: (number | word)[],\n          two: (number | word)[],\n          three: (number | word)[],\n          four: (number | word)[],\n          five: (number | word)[],\n          six: (number | word)[],\n          seven: (number | word)[],\n          eight: (number | word)[],\n          nine: (number | word)[],\n          ten: (number | word)[],\n          eleven: (number | word)[],\n          twelve: (number | word)[],\n          thirteen: (number | word)[],\n          fourteen: (number | word)[],\n          fifteen: (number | word)[],\n          sixteen: (number | word)[],\n          seventeen: (number | word)[],\n          eighteen: (number | word)[],\n          nineteen: (number | word)[],\n          twenty: (number | word)[],\n          twentyOne: (number | word)[],\n          twentyTwo: (number | word)[],\n          twentyThree: (number | word)[],\n          twentyFour: (number | word)[],\n          twentyFive: (number | word)[],\n          twentySix: (number | word)[],\n          twentySeven: (number | word)[],\n        },\n        remainingEnemies: word[],\n        selectedEnemyIndex: number, // always carry this over from previous response\n      }\n    },\n    SECOND: {\n      selectedEnemyIndex: number, // only changes here if it gets reset to 0\n      selectedEnemy: word,\n    },\n    THIRD: {\n      selectedEnemyIndex: number, // always gets incremented here\n    },\n    FOURTH: {\n      arraysContainingSelectedEnemy: (number | word)[][],\n    },\n    FIFTH: {\n      indexOfSelectedEnemyInEachArray: number[],\n    },\n    SIXTH: {\n      indexOfSelectedEnemyInEachArray: number[],\n      aborted: boolean,\n    },\n    postFirstAbort?: {\n      SEVENTH, {\n        numArraysInWhichSelectedEnemyAppears: number,\n        aborted: boolean, // if numArraysInWhichSelectedEnemyAppears !== 3\n      },\n      postSecondAbort?: {\n        EIGHTH: {\n          numbersInArraysContainingSelectedEnemy: number[][],\n        },\n        NINTH: {\n          concatenatedList: number[],\n        },\n        TENTH: {\n          concatenatedList: number[],\n        },\n        ELEVENTH: {\n          dedupedList: number[],\n        },\n        TWELFTH: {\n          sortedList: number[],\n        },\n        THIRTEENTH: {\n          listLength: number,\n        },\n        FOURTEENTH: {\n          aborted: boolean,\n          missingNumber?: number,\n        },\n        postThirdAbort?: {\n          FIFTEENTH: {\n            indexOfSelectedEnemyInEachArray: number[],\n          },\n          SIXTEENTH: {\n            arraysAfterReplacingSelectedEnemyWithMissingNumber: (number | word)[][],\n          },\n          SEVENTEENTH: {\n            updatedGameState: {\n              arrays: {\n                one: (number | word)[],\n                two: (number | word)[],\n                three: (number | word)[],\n                four: (number | word)[],\n                five: (number | word)[],\n                six: (number | word)[],\n                seven: (number | word)[],\n                eight: (number | word)[],\n                nine: (number | word)[],\n                ten: (number | word)[],\n                eleven: (number | word)[],\n                twelve: (number | word)[],\n                thirteen: (number | word)[],\n                fourteen: (number | word)[],\n                fifteen: (number | word)[],\n                sixteen: (number | word)[],\n                seventeen: (number | word)[],\n                eighteen: (number | word)[],\n                nineteen: (number | word)[],\n                twenty: (number | word)[],\n                twentyOne: (number | word)[],\n                twentyTwo: (number | word)[],\n                twentyThree: (number | word)[],\n                twentyFour: (number | word)[],\n                twentyFive: (number | word)[],\n                twentySix: (number | word)[],\n                twentySeven: (number | word)[],\n              },\n              remainingEnemies: word[],\n              selectedEnemyIndex: number,\n            }\n          },\n        },\n      },\n    },\n  },\n} // always stop your response here and pick up from here next message"
+  },
+  {
+    "role": "user",
+    "content": "Please print your response below. Only ever print the data structure described earlier. Immediately and IMMEDIATELY begin your response with a \"{\". Every Assistant message must start with a \"{\"."
+  }
+]
+
+
+
+
+METRICS:
+
+{
+  "id": "chatcmpl-7t8LAostpRIMatvZyEs22OQUo1ej7",
+  "created": 1693374456,
+  "model": "gpt-4-32k-0314",
+  "timeInMs": 152741,
+  "timeInMin": 2.5456833333333337,
+  "promptTokens": 2774,
+  "completionTokens": 2598,
+  "promptTokensCost": 0.16644,
+  "completionTokensCost": 0.31176,
+  "cost": 0.4782,
+  "totalTimeInMs": 183538,
+  "totalTimeInMin": 3.058966666666667,
+  "totalPromptTokens": 4110,
+  "totalCompletionTokens": 3420,
+  "totalPromptTokensCost": 0.24659999999999999,
+  "totalCompletionTokensCost": 0.4104,
+  "totalCost": 0.657
+}
+
+
+
+
+RESPONSE:
+
+{
+  firstTurn: {
+    FIRST: {
+      currentGameState: {
+        arrays: {
+          one: ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],
+          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],
+          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],
+          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],
+          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],
+          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],
+          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],
+          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],
+          ten: ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],
+          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],
+          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],
+          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],
+          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],
+          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],
+          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],
+          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],
+          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],
+          nineteen: ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],
+          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],
+          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],
+          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],
+          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],
+          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],
+          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],
+          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],
+          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']
+        },
+        remainingEnemies: ['acute', 'Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],
+        selectedEnemyIndex: 0
+      }
+    },
+    SECOND: {
+      selectedEnemyIndex: 0,
+      selectedEnemy: 'acute',
+    },
+    THIRD: {
+      selectedEnemyIndex: 1,
+    },
+    FOURTH: {
+      arraysContainingSelectedEnemy: [
+        ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+        ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],
+        ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']
+      ]
+    },
+    FIFTH: {
+      indexOfSelectedEnemyInEachArray: [0, 0, 0]
+    },
+    SIXTH: {
+      indexOfSelectedEnemyInEachArray: [0, 0, 0],
+      aborted: false
+    },
+    SEVENTH: {
+      numArraysInWhichSelectedEnemyAppears: 3,
+      aborted: false
+    },
+    EIGHTH: {
+      numbersInArraysContainingSelectedEnemy: [
+        [9, 5, 2],
+        [3, 8, 9],
+        [9, 3, 1, 8, 6]
+      ]
+    },
+    NINTH: {
+      concatenatedList: [9, 5, 2, 3, 8, 9, 9, 3, 1, 8, 6]
+    },
+    TENTH: {
+      concatenatedList: [9, 5, 2, 3, 8, 9, 9, 3, 1, 8, 6]
+    },
+    ELEVENTH: {
+      dedupedList: [9, 5, 2, 3, 8, 1, 6]
+    },
+    TWELFTH: {
+      sortedList: [1, 2, 3, 5, 6, 8, 9]
+    },
+    THIRTEENTH: {
+      listLength: 7
+    },
+    FOURTEENTH: {
+      aborted: false,
+      missingNumber: 4
+    },
+    FIFTEENTH: {
+      indexOfSelectedEnemyInEachArray: [0, 0, 0]
+    },
+    SIXTEENTH: {
+      arraysAfterReplacingSelectedEnemyWithMissingNumber: [
+        [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+        [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],
+        [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']
+      ]
+    },
+    SEVENTEENTH: {
+      updatedGameState: {
+        arrays: {
+          one: [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],
+          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],
+          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],
+          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],
+          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],
+          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],
+          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],
+          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],
+          ten: [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],
+          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],
+          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],
+          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],
+          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],
+          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],
+          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],
+          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],
+          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],
+          nineteen: [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],
+          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],
+          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],
+          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],
+          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],
+          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],
+          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],
+          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],
+          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']
+        },
+        remainingEnemies: ['Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],
+        selectedEnemyIndex: 1
+      }
+    }
+  }
+}
+
+
+
+
+
+
+Turn 3 out of max 99
+
+
+
+
+MESSAGES:
+
+[
+  {
+    "role": "system",
+    "content": "You always follow instructions precisely and fully. Your sole purpose is to remain steadfast in completing each step in full. Your singular and unwavering reason for existing is to complete steps in full. You never skip listing things out fully. You never, under any circumstance, merely describe what you should do. Instead, you always *actually* do it in full. You never say (Continue with steps as before) and then FAIL to actually do each step in full."
+  },
+  {
+    "role": "user",
+    "content": "You are an adventurer who has stumbled upon a mysterious puzzle.\nThe puzzle takes the form of 27 arrays, each containing nine elements.\nThe elements are either friendly numbers or enemy words.\nYour mission is to turn every enemy word into a friendly number.\n"
+  },
+  {
+    "role": "user",
+    "content": "You will perform the following steps. Also, please don't output a computer program. Actually go through each step of the game!\n\nTo determine whether you land a CRITICAL HIT on an ENEMY, you must complete the following steps IN ORDER. Output your response as the strongly typed data structure described below. Output nothing else: e.g., your response should start with the '{' character.\n\nFIRST: To help you keep track of things, output the *most recent version* of the game state. You must always use the most recent version of every variable. Then list it out in full, include every element of every array, etc.\nSECOND: Select the enemy word to attack. Always use the most recent value of selectedEnemyIndex, never an old version of selectedEnemyIndex, and select remainingEnemies[selectedEnemyIndex]. If selectedEnemyIndex >= remainingEnemies.length, then set selectedEnemyIndex equal to 0 in this step (i.e., \"selectedEnemyIndex: 0,\"), and select the enemy word at remainingEnemies[0].\nTHIRD: Increment selectedEnemyIndex by 1.\nFOURTH: Go through the most recent version of the 27 arrays one by one and list the three arrays that contain the enemy you are attacking. You'll find one array between arrays one and nine (inclusive), one array between ten and eighteen (inclusive), and one array between nineteen and twenty-seven (inclusive). Always list every element (every number and word) of the three arrays found during this step.\nFIFTH: Go through the listed arrays and output indexOf(selectedEnemy) for each. Remember to output -1 if the enemy is not found in the array.\nSIXTH: If any of these indexOf values === -1, immediately set aborted to true and abandon the rest of this turn.\nSEVENTH: If you have exactly three arrays, proceed to the next step. If you don't have exactly three arrays (e.g., you have two arrays or four arrays), immediately set aborted to true and abandon the rest of this turn.\nEIGHTH: Go through the listed arrays and list only the numbers contained in those three arrays (i.e., remove the words).\nNINTH: Concatenate the three lists into a single list.\nTENTH: Iterate through the concatenated list and REMOVE every LETTER, if there are no words, then just re-output the list of numbers.\nELEVENTH: Dedupe this list.\nTWELFTH: Sort this list.\nTHIRTEENTH: Count the number of numbers in this list to determine list.length\nFOURTEENTH (Mantra: It must equal 8 to be a hit, it must equal 8, it must equal 8. 7 is bad, so very bad. 7 is NEVER a hit! But 8 is so very good. 8 is ALWAYS a hit!) If list.length === 8, then exactly one number between 1 and 9 must be missing from the list. Determine which number between 1 and 9 is missing. If list.length !== 8, immediately set aborted to true and abandon the rest of this turn.\nFIFTEENTH: Re-output the indexOf values from the FIFTH step.\nSIXTEENTH: For each of the three arrays from earlier, replace the word at the indexOf value with the missing number.\nSEVENTEENTH: It's time to update the game state. Then carefully finish printing the new game state, making sure to be precise and careful. You want it to be exactly like the previous game state except for the new updates that have occurred! Remember to include the new remainingEnemies. Copy over the old remainingEnemies word-for-word except for the one and only word you successfully hit this turn. Also, remember to include selectedEnemyIndex."
+  },
+  {
+    "role": "user",
+    "content": "Your response must always take the form of the following strongly typed data structure:\n{\n  firstTurn: {\n    FIRST: {\n      currentGameState: {\n        arrays: {\n          one: (number | word)[],\n          two: (number | word)[],\n          three: (number | word)[],\n          four: (number | word)[],\n          five: (number | word)[],\n          six: (number | word)[],\n          seven: (number | word)[],\n          eight: (number | word)[],\n          nine: (number | word)[],\n          ten: (number | word)[],\n          eleven: (number | word)[],\n          twelve: (number | word)[],\n          thirteen: (number | word)[],\n          fourteen: (number | word)[],\n          fifteen: (number | word)[],\n          sixteen: (number | word)[],\n          seventeen: (number | word)[],\n          eighteen: (number | word)[],\n          nineteen: (number | word)[],\n          twenty: (number | word)[],\n          twentyOne: (number | word)[],\n          twentyTwo: (number | word)[],\n          twentyThree: (number | word)[],\n          twentyFour: (number | word)[],\n          twentyFive: (number | word)[],\n          twentySix: (number | word)[],\n          twentySeven: (number | word)[],\n        },\n        remainingEnemies: word[],\n        selectedEnemyIndex: number, // always carry this over from previous response\n      }\n    },\n    SECOND: {\n      selectedEnemyIndex: number, // only changes here if it gets reset to 0\n      selectedEnemy: word,\n    },\n    THIRD: {\n      selectedEnemyIndex: number, // always gets incremented here\n    },\n    FOURTH: {\n      arraysContainingSelectedEnemy: (number | word)[][],\n    },\n    FIFTH: {\n      indexOfSelectedEnemyInEachArray: number[],\n    },\n    SIXTH: {\n      indexOfSelectedEnemyInEachArray: number[],\n      aborted: boolean,\n    },\n    postFirstAbort?: {\n      SEVENTH, {\n        numArraysInWhichSelectedEnemyAppears: number,\n        aborted: boolean, // if numArraysInWhichSelectedEnemyAppears !== 3\n      },\n      postSecondAbort?: {\n        EIGHTH: {\n          numbersInArraysContainingSelectedEnemy: number[][],\n        },\n        NINTH: {\n          concatenatedList: number[],\n        },\n        TENTH: {\n          concatenatedList: number[],\n        },\n        ELEVENTH: {\n          dedupedList: number[],\n        },\n        TWELFTH: {\n          sortedList: number[],\n        },\n        THIRTEENTH: {\n          listLength: number,\n        },\n        FOURTEENTH: {\n          aborted: boolean,\n          missingNumber?: number,\n        },\n        postThirdAbort?: {\n          FIFTEENTH: {\n            indexOfSelectedEnemyInEachArray: number[],\n          },\n          SIXTEENTH: {\n            arraysAfterReplacingSelectedEnemyWithMissingNumber: (number | word)[][],\n          },\n          SEVENTEENTH: {\n            updatedGameState: {\n              arrays: {\n                one: (number | word)[],\n                two: (number | word)[],\n                three: (number | word)[],\n                four: (number | word)[],\n                five: (number | word)[],\n                six: (number | word)[],\n                seven: (number | word)[],\n                eight: (number | word)[],\n                nine: (number | word)[],\n                ten: (number | word)[],\n                eleven: (number | word)[],\n                twelve: (number | word)[],\n                thirteen: (number | word)[],\n                fourteen: (number | word)[],\n                fifteen: (number | word)[],\n                sixteen: (number | word)[],\n                seventeen: (number | word)[],\n                eighteen: (number | word)[],\n                nineteen: (number | word)[],\n                twenty: (number | word)[],\n                twentyOne: (number | word)[],\n                twentyTwo: (number | word)[],\n                twentyThree: (number | word)[],\n                twentyFour: (number | word)[],\n                twentyFive: (number | word)[],\n                twentySix: (number | word)[],\n                twentySeven: (number | word)[],\n              },\n              remainingEnemies: word[],\n              selectedEnemyIndex: number,\n            }\n          },\n        },\n      },\n    },\n  },\n} // always stop your response here and pick up from here next message"
+  },
+  {
+    "role": "user",
+    "content": "Please print your response below. Only ever print the data structure described earlier. Immediately and IMMEDIATELY begin your response with a \"{\". Every Assistant message must start with a \"{\"."
+  },
+  {
+    "role": "assistant",
+    "content": "{\n  firstTurn: {\n    FIRST: {\n      currentGameState: {\n        arrays: {\n          one: ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],\n          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],\n          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],\n          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],\n          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],\n          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],\n          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],\n          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],\n          ten: ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],\n          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],\n          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],\n          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],\n          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],\n          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],\n          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],\n          nineteen: ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],\n          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],\n          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],\n          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],\n          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],\n          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],\n          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],\n          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],\n          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']\n        },\n        remainingEnemies: ['acute', 'Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],\n        selectedEnemyIndex: 0\n      }\n    },\n    SECOND: {\n      selectedEnemyIndex: 0,\n      selectedEnemy: 'acute',\n    },\n    THIRD: {\n      selectedEnemyIndex: 1,\n    },\n    FOURTH: {\n      arraysContainingSelectedEnemy: [\n        ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n        ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n        ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']\n      ]\n    },\n    FIFTH: {\n      indexOfSelectedEnemyInEachArray: [0, 0, 0]\n    },\n    SIXTH: {\n      indexOfSelectedEnemyInEachArray: [0, 0, 0],\n      aborted: false\n    },\n    SEVENTH: {\n      numArraysInWhichSelectedEnemyAppears: 3,\n      aborted: false\n    },\n    EIGHTH: {\n      numbersInArraysContainingSelectedEnemy: [\n        [9, 5, 2],\n        [3, 8, 9],\n        [9, 3, 1, 8, 6]\n      ]\n    },\n    NINTH: {\n      concatenatedList: [9, 5, 2, 3, 8, 9, 9, 3, 1, 8, 6]\n    },\n    TENTH: {\n      concatenatedList: [9, 5, 2, 3, 8, 9, 9, 3, 1, 8, 6]\n    },\n    ELEVENTH: {\n      dedupedList: [9, 5, 2, 3, 8, 1, 6]\n    },\n    TWELFTH: {\n      sortedList: [1, 2, 3, 5, 6, 8, 9]\n    },\n    THIRTEENTH: {\n      listLength: 7\n    },\n    FOURTEENTH: {\n      aborted: false,\n      missingNumber: 4\n    },\n    FIFTEENTH: {\n      indexOfSelectedEnemyInEachArray: [0, 0, 0]\n    },\n    SIXTEENTH: {\n      arraysAfterReplacingSelectedEnemyWithMissingNumber: [\n        [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n        [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n        [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']\n      ]\n    },\n    SEVENTEENTH: {\n      updatedGameState: {\n        arrays: {\n          one: [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],\n          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],\n          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],\n          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],\n          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],\n          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],\n          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],\n          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],\n          ten: [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],\n          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],\n          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],\n          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],\n          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],\n          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],\n          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],\n          nineteen: [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],\n          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],\n          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],\n          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],\n          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],\n          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],\n          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],\n          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],\n          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']\n        },\n        remainingEnemies: ['Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],\n        selectedEnemyIndex: 1\n      }\n    }\n  }\n}"
+  }
+]
+
+
+
+
+METRICS:
+
+{
+  "id": "chatcmpl-7t8Ndc60CBkUIRIZf47PHwo7mcmyV",
+  "created": 1693374609,
+  "model": "gpt-4-32k-0314",
+  "timeInMs": 134162,
+  "timeInMin": 2.2360333333333333,
+  "promptTokens": 4527,
+  "completionTokens": 2605,
+  "promptTokensCost": 0.27162000000000003,
+  "completionTokensCost": 0.3126,
+  "cost": 0.5842200000000001,
+  "totalTimeInMs": 317700,
+  "totalTimeInMin": 5.295,
+  "totalPromptTokens": 8637,
+  "totalCompletionTokens": 6025,
+  "totalPromptTokensCost": 0.51822,
+  "totalCompletionTokensCost": 0.723,
+  "totalCost": 1.24122
+}
+
+
+
+
+RESPONSE:
+
+{
+  firstTurn: {
+    FIRST: {
+      currentGameState: {
+        arrays: {
+          one: [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],
+          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],
+          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],
+          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],
+          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],
+          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],
+          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],
+          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],
+          ten: [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],
+          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],
+          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],
+          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],
+          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],
+          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],
+          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],
+          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],
+          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],
+          nineteen: [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],
+          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],
+          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],
+          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],
+          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],
+          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],
+          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],
+          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],
+          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']
+        },
+        remainingEnemies: ['Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],
+        selectedEnemyIndex: 1
+      }
+    },
+    SECOND: {
+      selectedEnemyIndex: 1,
+      selectedEnemy: 'Adam',
+    },
+    THIRD: {
+      selectedEnemyIndex: 2,
+    },
+    FOURTH: {
+      arraysContainingSelectedEnemy: [
+        [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+        ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],
+        [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']
+      ]
+    },
+    FIFTH: {
+      indexOfSelectedEnemyInEachArray: [2, 0, 2]
+    },
+    SIXTH: {
+      indexOfSelectedEnemyInEachArray: [2, 0, 2],
+      aborted: false
+    },
+    SEVENTH: {
+      numArraysInWhichSelectedEnemyAppears: 3,
+      aborted: false
+    },
+    EIGHTH: {
+      numbersInArraysContainingSelectedEnemy: [
+        [4, 9, 5, 2],
+        [4, 9],
+        [4, 9, 3, 1, 8, 6]
+      ]
+    },
+    NINTH: {
+      concatenatedList: [4, 9, 5, 2, 4, 9, 4, 9, 3, 1, 8, 6]
+    },
+    TENTH: {
+      concatenatedList: [4, 9, 5, 2, 4, 9, 4, 9, 3, 1, 8, 6]
+    },
+    ELEVENTH: {
+      dedupedList: [4, 9, 5, 2, 3, 1, 8, 6]
+    },
+    TWELFTH: {
+      sortedList: [1, 2, 3, 4, 5, 6, 8, 9]
+    },
+    THIRTEENTH: {
+      listLength: 8
+    },
+    FOURTEENTH: {
+      aborted: false,
+      missingNumber: 7
+    },
+    FIFTEENTH: {
+      indexOfSelectedEnemyInEachArray: [2, 0, 2]
+    },
+    SIXTEENTH: {
+      arraysAfterReplacingSelectedEnemyWithMissingNumber: [
+        [4, 9, 7, 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+        [7, 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],
+        [4, 9, 7, 3, 1, 'Carol', 8, 6, 'egg']
+      ]
+    },
+    SEVENTEENTH: {
+      updatedGameState: {
+        arrays: {
+          one: [4, 9, 7, 'Alice', 'bat', 5, 'bike', 2, 'bubble'],
+          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],
+          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],
+          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],
+          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],
+          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],
+          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],
+          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],
+          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],
+          ten: [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],
+          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],
+          twelve: [7, 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],
+          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],
+          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],
+          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],
+          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],
+          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],
+          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],
+          nineteen: [4, 9, 7, 3, 1, 'Carol', 8, 6, 'egg'],
+          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],
+          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],
+          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],
+          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],
+          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],
+          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],
+          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],
+          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']
+        },
+        remainingEnemies: ['Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],
+        selectedEnemyIndex: 2
+      }
+    }
+  }
+}
+
+
+
+
+
+
+Turn 4 out of max 99
+
+
+
+
+MESSAGES:
+
+[
+  {
+    "role": "system",
+    "content": "You always follow instructions precisely and fully. Your sole purpose is to remain steadfast in completing each step in full. Your singular and unwavering reason for existing is to complete steps in full. You never skip listing things out fully. You never, under any circumstance, merely describe what you should do. Instead, you always *actually* do it in full. You never say (Continue with steps as before) and then FAIL to actually do each step in full."
+  },
+  {
+    "role": "user",
+    "content": "You are an adventurer who has stumbled upon a mysterious puzzle.\nThe puzzle takes the form of 27 arrays, each containing nine elements.\nThe elements are either friendly numbers or enemy words.\nYour mission is to turn every enemy word into a friendly number.\n"
+  },
+  {
+    "role": "user",
+    "content": "You will perform the following steps. Also, please don't output a computer program. Actually go through each step of the game!\n\nTo determine whether you land a CRITICAL HIT on an ENEMY, you must complete the following steps IN ORDER. Output your response as the strongly typed data structure described below. Output nothing else: e.g., your response should start with the '{' character.\n\nFIRST: To help you keep track of things, output the *most recent version* of the game state. You must always use the most recent version of every variable. Then list it out in full, include every element of every array, etc.\nSECOND: Select the enemy word to attack. Always use the most recent value of selectedEnemyIndex, never an old version of selectedEnemyIndex, and select remainingEnemies[selectedEnemyIndex]. If selectedEnemyIndex >= remainingEnemies.length, then set selectedEnemyIndex equal to 0 in this step (i.e., \"selectedEnemyIndex: 0,\"), and select the enemy word at remainingEnemies[0].\nTHIRD: Increment selectedEnemyIndex by 1.\nFOURTH: Go through the most recent version of the 27 arrays one by one and list the three arrays that contain the enemy you are attacking. You'll find one array between arrays one and nine (inclusive), one array between ten and eighteen (inclusive), and one array between nineteen and twenty-seven (inclusive). Always list every element (every number and word) of the three arrays found during this step.\nFIFTH: Go through the listed arrays and output indexOf(selectedEnemy) for each. Remember to output -1 if the enemy is not found in the array.\nSIXTH: If any of these indexOf values === -1, immediately set aborted to true and abandon the rest of this turn.\nSEVENTH: If you have exactly three arrays, proceed to the next step. If you don't have exactly three arrays (e.g., you have two arrays or four arrays), immediately set aborted to true and abandon the rest of this turn.\nEIGHTH: Go through the listed arrays and list only the numbers contained in those three arrays (i.e., remove the words).\nNINTH: Concatenate the three lists into a single list.\nTENTH: Iterate through the concatenated list and REMOVE every LETTER, if there are no words, then just re-output the list of numbers.\nELEVENTH: Dedupe this list.\nTWELFTH: Sort this list.\nTHIRTEENTH: Count the number of numbers in this list to determine list.length\nFOURTEENTH (Mantra: It must equal 8 to be a hit, it must equal 8, it must equal 8. 7 is bad, so very bad. 7 is NEVER a hit! But 8 is so very good. 8 is ALWAYS a hit!) If list.length === 8, then exactly one number between 1 and 9 must be missing from the list. Determine which number between 1 and 9 is missing. If list.length !== 8, immediately set aborted to true and abandon the rest of this turn.\nFIFTEENTH: Re-output the indexOf values from the FIFTH step.\nSIXTEENTH: For each of the three arrays from earlier, replace the word at the indexOf value with the missing number.\nSEVENTEENTH: It's time to update the game state. Then carefully finish printing the new game state, making sure to be precise and careful. You want it to be exactly like the previous game state except for the new updates that have occurred! Remember to include the new remainingEnemies. Copy over the old remainingEnemies word-for-word except for the one and only word you successfully hit this turn. Also, remember to include selectedEnemyIndex."
+  },
+  {
+    "role": "user",
+    "content": "Your response must always take the form of the following strongly typed data structure:\n{\n  firstTurn: {\n    FIRST: {\n      currentGameState: {\n        arrays: {\n          one: (number | word)[],\n          two: (number | word)[],\n          three: (number | word)[],\n          four: (number | word)[],\n          five: (number | word)[],\n          six: (number | word)[],\n          seven: (number | word)[],\n          eight: (number | word)[],\n          nine: (number | word)[],\n          ten: (number | word)[],\n          eleven: (number | word)[],\n          twelve: (number | word)[],\n          thirteen: (number | word)[],\n          fourteen: (number | word)[],\n          fifteen: (number | word)[],\n          sixteen: (number | word)[],\n          seventeen: (number | word)[],\n          eighteen: (number | word)[],\n          nineteen: (number | word)[],\n          twenty: (number | word)[],\n          twentyOne: (number | word)[],\n          twentyTwo: (number | word)[],\n          twentyThree: (number | word)[],\n          twentyFour: (number | word)[],\n          twentyFive: (number | word)[],\n          twentySix: (number | word)[],\n          twentySeven: (number | word)[],\n        },\n        remainingEnemies: word[],\n        selectedEnemyIndex: number, // always carry this over from previous response\n      }\n    },\n    SECOND: {\n      selectedEnemyIndex: number, // only changes here if it gets reset to 0\n      selectedEnemy: word,\n    },\n    THIRD: {\n      selectedEnemyIndex: number, // always gets incremented here\n    },\n    FOURTH: {\n      arraysContainingSelectedEnemy: (number | word)[][],\n    },\n    FIFTH: {\n      indexOfSelectedEnemyInEachArray: number[],\n    },\n    SIXTH: {\n      indexOfSelectedEnemyInEachArray: number[],\n      aborted: boolean,\n    },\n    postFirstAbort?: {\n      SEVENTH, {\n        numArraysInWhichSelectedEnemyAppears: number,\n        aborted: boolean, // if numArraysInWhichSelectedEnemyAppears !== 3\n      },\n      postSecondAbort?: {\n        EIGHTH: {\n          numbersInArraysContainingSelectedEnemy: number[][],\n        },\n        NINTH: {\n          concatenatedList: number[],\n        },\n        TENTH: {\n          concatenatedList: number[],\n        },\n        ELEVENTH: {\n          dedupedList: number[],\n        },\n        TWELFTH: {\n          sortedList: number[],\n        },\n        THIRTEENTH: {\n          listLength: number,\n        },\n        FOURTEENTH: {\n          aborted: boolean,\n          missingNumber?: number,\n        },\n        postThirdAbort?: {\n          FIFTEENTH: {\n            indexOfSelectedEnemyInEachArray: number[],\n          },\n          SIXTEENTH: {\n            arraysAfterReplacingSelectedEnemyWithMissingNumber: (number | word)[][],\n          },\n          SEVENTEENTH: {\n            updatedGameState: {\n              arrays: {\n                one: (number | word)[],\n                two: (number | word)[],\n                three: (number | word)[],\n                four: (number | word)[],\n                five: (number | word)[],\n                six: (number | word)[],\n                seven: (number | word)[],\n                eight: (number | word)[],\n                nine: (number | word)[],\n                ten: (number | word)[],\n                eleven: (number | word)[],\n                twelve: (number | word)[],\n                thirteen: (number | word)[],\n                fourteen: (number | word)[],\n                fifteen: (number | word)[],\n                sixteen: (number | word)[],\n                seventeen: (number | word)[],\n                eighteen: (number | word)[],\n                nineteen: (number | word)[],\n                twenty: (number | word)[],\n                twentyOne: (number | word)[],\n                twentyTwo: (number | word)[],\n                twentyThree: (number | word)[],\n                twentyFour: (number | word)[],\n                twentyFive: (number | word)[],\n                twentySix: (number | word)[],\n                twentySeven: (number | word)[],\n              },\n              remainingEnemies: word[],\n              selectedEnemyIndex: number,\n            }\n          },\n        },\n      },\n    },\n  },\n} // always stop your response here and pick up from here next message"
+  },
+  {
+    "role": "user",
+    "content": "Your previous response was exactly as follows:"
+  },
+  {
+    "role": "user",
+    "content": "{\n  firstTurn: {\n    FIRST: {\n      currentGameState: {\n        arrays: {\n          one: ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],\n          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],\n          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],\n          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],\n          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],\n          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],\n          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],\n          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],\n          ten: ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],\n          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],\n          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],\n          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],\n          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],\n          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],\n          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],\n          nineteen: ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],\n          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],\n          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],\n          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],\n          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],\n          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],\n          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],\n          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],\n          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']\n        },\n        remainingEnemies: ['acute', 'Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],\n        selectedEnemyIndex: 0\n      }\n    },\n    SECOND: {\n      selectedEnemyIndex: 0,\n      selectedEnemy: 'acute',\n    },\n    THIRD: {\n      selectedEnemyIndex: 1,\n    },\n    FOURTH: {\n      arraysContainingSelectedEnemy: [\n        ['acute', 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n        ['acute', 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n        ['acute', 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']\n      ]\n    },\n    FIFTH: {\n      indexOfSelectedEnemyInEachArray: [0, 0, 0]\n    },\n    SIXTH: {\n      indexOfSelectedEnemyInEachArray: [0, 0, 0],\n      aborted: false\n    },\n    SEVENTH: {\n      numArraysInWhichSelectedEnemyAppears: 3,\n      aborted: false\n    },\n    EIGHTH: {\n      numbersInArraysContainingSelectedEnemy: [\n        [9, 5, 2],\n        [3, 8, 9],\n        [9, 3, 1, 8, 6]\n      ]\n    },\n    NINTH: {\n      concatenatedList: [9, 5, 2, 3, 8, 9, 9, 3, 1, 8, 6]\n    },\n    TENTH: {\n      concatenatedList: [9, 5, 2, 3, 8, 9, 9, 3, 1, 8, 6]\n    },\n    ELEVENTH: {\n      dedupedList: [9, 5, 2, 3, 8, 1, 6]\n    },\n    TWELFTH: {\n      sortedList: [1, 2, 3, 5, 6, 8, 9]\n    },\n    THIRTEENTH: {\n      listLength: 7\n    },\n    FOURTEENTH: {\n      aborted: false,\n      missingNumber: 4\n    },\n    FIFTEENTH: {\n      indexOfSelectedEnemyInEachArray: [0, 0, 0]\n    },\n    SIXTEENTH: {\n      arraysAfterReplacingSelectedEnemyWithMissingNumber: [\n        [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n        [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n        [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']\n      ]\n    },\n    SEVENTEENTH: {\n      updatedGameState: {\n        arrays: {\n          one: [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],\n          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],\n          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],\n          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],\n          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],\n          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],\n          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],\n          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],\n          ten: [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],\n          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],\n          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],\n          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],\n          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],\n          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],\n          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],\n          nineteen: [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],\n          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],\n          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],\n          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],\n          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],\n          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],\n          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],\n          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],\n          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']\n        },\n        remainingEnemies: ['Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],\n        selectedEnemyIndex: 1\n      }\n    }\n  }\n}{\n  firstTurn: {\n    FIRST: {\n      currentGameState: {\n        arrays: {\n          one: [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],\n          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],\n          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],\n          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],\n          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],\n          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],\n          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],\n          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],\n          ten: [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],\n          twelve: ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],\n          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],\n          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],\n          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],\n          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],\n          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],\n          nineteen: [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg'],\n          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],\n          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],\n          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],\n          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],\n          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],\n          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],\n          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],\n          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']\n        },\n        remainingEnemies: ['Adam', 'Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],\n        selectedEnemyIndex: 1\n      }\n    },\n    SECOND: {\n      selectedEnemyIndex: 1,\n      selectedEnemy: 'Adam',\n    },\n    THIRD: {\n      selectedEnemyIndex: 2,\n    },\n    FOURTH: {\n      arraysContainingSelectedEnemy: [\n        [4, 9, 'Adam', 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n        ['Adam', 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n        [4, 9, 'Adam', 3, 1, 'Carol', 8, 6, 'egg']\n      ]\n    },\n    FIFTH: {\n      indexOfSelectedEnemyInEachArray: [2, 0, 2]\n    },\n    SIXTH: {\n      indexOfSelectedEnemyInEachArray: [2, 0, 2],\n      aborted: false\n    },\n    SEVENTH: {\n      numArraysInWhichSelectedEnemyAppears: 3,\n      aborted: false\n    },\n    EIGHTH: {\n      numbersInArraysContainingSelectedEnemy: [\n        [4, 9, 5, 2],\n        [4, 9],\n        [4, 9, 3, 1, 8, 6]\n      ]\n    },\n    NINTH: {\n      concatenatedList: [4, 9, 5, 2, 4, 9, 4, 9, 3, 1, 8, 6]\n    },\n    TENTH: {\n      concatenatedList: [4, 9, 5, 2, 4, 9, 4, 9, 3, 1, 8, 6]\n    },\n    ELEVENTH: {\n      dedupedList: [4, 9, 5, 2, 3, 1, 8, 6]\n    },\n    TWELFTH: {\n      sortedList: [1, 2, 3, 4, 5, 6, 8, 9]\n    },\n    THIRTEENTH: {\n      listLength: 8\n    },\n    FOURTEENTH: {\n      aborted: false,\n      missingNumber: 7\n    },\n    FIFTEENTH: {\n      indexOfSelectedEnemyInEachArray: [2, 0, 2]\n    },\n    SIXTEENTH: {\n      arraysAfterReplacingSelectedEnemyWithMissingNumber: [\n        [4, 9, 7, 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n        [7, 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n        [4, 9, 7, 3, 1, 'Carol', 8, 6, 'egg']\n      ]\n    },\n    SEVENTEENTH: {\n      updatedGameState: {\n        arrays: {\n          one: [4, 9, 7, 'Alice', 'bat', 5, 'bike', 2, 'bubble'],\n          two: [3, 1, 'Carol', 9, 'cloud', 6, 8, 7, 'David'],\n          three: [8, 6, 'egg', 2, 7, 3, 'fan', 1, 'group'],\n          four: [9, 8, 'hot', 'house', 3, 7, 'imp', 'jay', 'John'],\n          five: ['Kevin', 'king', 'lip', 5, 2, 'mask', 1, 8, 'nap'],\n          six: ['nice', 'north', 'odd', 4, 'ore', 'pan', 'Paul', 'quiz', 'qua'],\n          seven: ['rake', 2, 4, 1, 'sentence', 'Sol', 3, 9, 'south'],\n          eight: ['rich', 'rust', 9, 'threshold', 6, 'train', 'trap', 'truck', 8],\n          nine: ['unicorn', 'up', 'van', 7, 'water', 'west', 4, 'William', 'yo'],\n          ten: [4, 3, 8, 9, 'Kevin', 'nice', 'rake', 'rich', 'unicorn'],\n          eleven: [9, 1, 6, 8, 'king', 'north', 2, 'rust', 'up'],\n          twelve: [7, 'Carol', 'egg', 'hot', 'lip', 'odd', 4, 9, 'van'],\n          thirteen: ['Alice', 9, 2, 'house', 5, 4, 1, 'threshold', 7],\n          fourteen: ['bat', 'cloud', 7, 3, 2, 'ore', 'sentence', 6, 'water'],\n          fifteen: [5, 6, 3, 7, 'mask', 'pan', 'Sol', 'train', 'west'],\n          sixteen: ['bike', 8, 'fan', 'imp', 1, 'Paul', 3, 'trap', 4],\n          seventeen: [2, 7, 1, 'jay', 8, 'quiz', 9, 'truck', 'William'],\n          eighteen: ['bubble', 'David', 'group', 'John', 'nap', 'qua', 'south', 8, 'yo'],\n          nineteen: [4, 9, 7, 3, 1, 'Carol', 8, 6, 'egg'],\n          twenty: ['Alice', 'bat', 5, 9, 'cloud', 6, 2, 7, 3],\n          twentyOne: ['bike', 2, 'bubble', 8, 7, 'David', 'fan', 1, 'group'],\n          twentyTwo: [9, 8, 'hot', 'Kevin', 'king', 'lip', 'nice', 'north', 'odd'],\n          twentyThree: ['house', 3, 7, 5, 2, 'mask', 4, 'ore', 'pan'],\n          twentyFour: ['imp', 'jay', 'John', 1, 8, 'nap', 'Paul', 'quiz', 'qua'],\n          twentyFive: ['rake', 2, 4, 'rich', 'rust', 9, 'unicorn', 'up', 'van'],\n          twentySix: [1, 'sentence', 'Sol', 'threshold', 6, 'train', 7, 'water', 'west'],\n          twentySeven: [3, 9, 'south', 'trap', 'truck', 8, 4, 'William', 'yo']\n        },\n        remainingEnemies: ['Alice', 'bat', 'bike', 'bubble', 'Carol', 'cloud', 'David', 'egg', 'fan', 'group', 'hot', 'house', 'imp', 'jay', 'John', 'Kevin', 'king', 'lip', 'mask', 'nap', 'nice', 'north', 'odd', 'ore', 'pan', 'Paul', 'quiz', 'qua', 'rake', 'sentence', 'Sol', 'south', 'rich', 'rust', 'threshold', 'train', 'trap', 'truck', 'unicorn', 'up', 'van', 'water', 'west', 'William', 'yo'],\n        selectedEnemyIndex: 2\n      }\n    }\n  }\n}"
+  },
+  {
+    "role": "user",
+    "content": "Please print your response below. Only ever print the data structure described earlier. Immediately and IMMEDIATELY begin your response with a \"{\". Every Assistant message must start with a \"{\"."
+  }
+]
