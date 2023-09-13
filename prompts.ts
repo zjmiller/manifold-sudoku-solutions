@@ -204,10 +204,35 @@ export const dataStructureOfResponse = `Your response must always take the form 
       selectedEnemyIndex: number, // always gets incremented here
     },
     FOURTH: {
-      arraysContainingSelectedEnemy: (number | word)[][],
+      firstArrayContainingSelectedEnemy: {
+        selectedEnemy: word,
+        exists: boolean, // false if can't find array
+        array?: (number | word)[], // leave out if exists === false
+      },
+      secondArrayContainingSelectedEnemy: {
+        selectedEnemy: word,
+        exists: boolean, // false if can't find array
+        array?: (number | word)[], // leave out if exists === false
+      },
+      thirdArrayContainingSelectedEnemy: {
+        selectedEnemy: word,
+        exists: boolean, // false if can't find array
+        array?: (number | word)[], // leave out if exists === false
+      },
     },
     FIFTH: {
-      indexOfSelectedEnemyInEachArray: number[], // -1 if not found
+      indexOfSelectedEnemyInFirstArray: {
+        selectedEnemy: word,
+        indexOfSelectedEnemyInFirstArray: number, // -1 if not found
+      },
+      indexOfSelectedEnemyInSecondArray: {
+        selectedEnemy: word,
+        indexOfSelectedEnemyInSecondArray: number, // -1 if not found
+      },
+      indexOfSelectedEnemyInThirdArray: {
+        selectedEnemy: word,
+        indexOfSelectedEnemyInThirdArray: number, // -1 if not found
+      },
     },
     SIXTH: {
       indexOfSelectedEnemyInEachArray: number[],

@@ -215,5 +215,5 @@ const puzzleStr = process.argv[2];
 // Call to start solving the Sudoku puzzle
 processSudoku(
   puzzleStr,
-  99 // preprocessing is one Manifold "turn"; every other 2 API responses is one Manifold "turn"
+  6 // preprocessing is one Manifold "turn"; every other 2 API responses is one Manifold "turn"
 );
